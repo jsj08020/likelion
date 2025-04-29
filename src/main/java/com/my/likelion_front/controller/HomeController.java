@@ -6,12 +6,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 	
+	@GetMapping("/rest-api")
+	public String restapi() {
+		return "rest-api";
+	}
 	
-	@GetMapping("/")
+	
+	@GetMapping("/js-study")
+	public String js() {
+		return "js-study";
+	}
+	
+	
+	@GetMapping("/home")
 	public String home() {
 		
 		return "home";
 	}
+	
 	
 	@GetMapping("/login")
 	public String login() {
@@ -19,10 +31,17 @@ public class HomeController {
 		return "login";
 	}
 	
-	@GetMapping("/ic")
+	@GetMapping("/id-class")
 	public String ic() {
 		
 		return "id-class";
 	}
+	
+	@GetMapping("/layout")
+	public String layout() {
+		
+		return "layout";
+	}
 
+	
 }
